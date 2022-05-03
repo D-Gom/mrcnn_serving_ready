@@ -28,7 +28,7 @@ class mask_config():
         self.IMAGE_MIN_DIM = 512
         self.IMAGE_MAX_DIM = 512
         self.IMAGE_MIN_SCALE = 2.0
-        self.MEAN_PIXEL = np.array([43.53, 39.56, 48.22])
+        self.MEAN_PIXEL = np.array([194.65, 155.78, 202.46])
         self.TRAIN_ROIS_PER_IMAGE = 128
         self.ROI_POSITIVE_RATIO = 0.33
         self.POOL_SIZE = 7
