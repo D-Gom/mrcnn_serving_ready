@@ -4,7 +4,8 @@ import keras.backend as K
 from tensorflow.python.saved_model import signature_constants
 from tensorflow.python.saved_model import tag_constants
 import os
-from config import mask_config, CocoConfig
+# from config import mask_config, CocoConfig
+from configNucleus import mask_config, CocoConfig
 from model import MaskRCNN
 
 sess = tf.Session()
@@ -20,7 +21,7 @@ def get_config():
         config = InferenceConfig()
 
     else:
-        config = mask_config(NUMBER_OF_CLASSES)
+        config = mask_config(1)
 
     return config
 

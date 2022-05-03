@@ -1,13 +1,15 @@
 # Your Inference Config Class
 # Replace your own config
 # MY_INFERENCE_CONFIG = YOUR_CONFIG_CLASS
-from config import CocoConfig
-class InferenceConfig(CocoConfig):
-    GPU_COUNT = 1
-    IMAGES_PER_GPU = 1
-coco_config = InferenceConfig()
+# from config import CocoConfig
+from configNucleus import mask_config, CocoConfig
+# class InferenceConfig(CocoConfig):
+#     GPU_COUNT = 1
+#     IMAGES_PER_GPU = 1
+# coco_config = InferenceConfig()
 
-MY_INFERENCE_CONFIG = coco_config
+# MY_INFERENCE_CONFIG = coco_config
+MY_INFERENCE_CONFIG = mask_config(1)
 
 
 # Tensorflow Model server variable
